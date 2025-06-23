@@ -1,14 +1,19 @@
 .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 70%;
   margin: auto;
   text-align: center;
+  flex-wrap: wrap;
 }
 
 .dice {
+  flex: 1 1 200px;
   text-align: center;
-  display: inline-block;
-
+  display: block; /* לא צריך inline-block ב-flex */
 }
+
 
 body {
   background-color: #393E46;
